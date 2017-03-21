@@ -1,5 +1,5 @@
 body{
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   margin-left: 0px;
   margin-top: -13px;
   --main-color: #2196F3;
@@ -96,7 +96,6 @@ h1 {
 }
 
 .raised_button{
-  font-family: Roboto;
   color: #FFFFFF;
   font-size: 14pt;
   text-decoration: none;
@@ -150,6 +149,7 @@ h1 {
   border-radius: var(--slider-circle-radius);
   background: var(--secondary-color);
   cursor: pointer;
+  border: none;
 }
 
 .slider::-ms-thumb {
