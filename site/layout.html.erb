@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link href="./css/main.css" rel="stylesheet"/>
+      <meta charset="utf-8"/>
+      <title><%=File.basename(__FILE__) %></title>
+      <script src="js/functions.js"/>
+      </script>
+    </head>
+    <body>
+      <header class="layout-header">
+        <img class="menu_button" src="./img/menu.png" alt="menu">
+      </header>
+      <main>
+        <%= yield %>
+      </main>
+      <footer>
+        <h1>Footer</h1>
+      </footer>
+    </body>
+</html>
