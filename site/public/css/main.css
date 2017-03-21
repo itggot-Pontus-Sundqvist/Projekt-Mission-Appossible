@@ -2,12 +2,46 @@ body{
   font-family: Roboto;
   margin-left: 0px;
   margin-top: -13px;
-  --main-color: #FFC107;
+  --main-color: #2196F3;
+  --secondary-color: #FFC400;
   height: 100%;
 }
 
 html {
   height: 100%;
+}
+
+.navigation_drawer {
+  height: 100%;
+  position: fixed;
+  width: 300px;
+  background-color: #fafafa;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navigation_icon {
+  opacity: 0.6;
+  width: 24px;
+  height: 24px;
+  margin-left: 16px;
+}
+
+.navigation_row {
+  color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation_titles {
+  margin-left: 32px;
+  font-size: 16px;
+  padding: 0px;
 }
 
 main {
@@ -17,6 +51,7 @@ main {
   z-index: 1;
   width: 100%;
 }
+
 .index_body {
   display: flex;
   flex-direction: column;
@@ -24,7 +59,6 @@ main {
   align-items: center;
   height: 100%;
 }
-
 
 .layout-header {
   position: absolute;
@@ -38,11 +72,12 @@ main {
 }
 
 h1 {
-  font-weight: 400;
+  font-weight: normal;
   font-size: 20px;
   color: white;
   margin-bottom: 20px;
   margin-left: 32px;
+  padding-bottom: 0px;
 }
 
 
@@ -73,7 +108,7 @@ h1 {
   padding-left: 16px;
   border: none;
   border-radius: 2px;
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
 }
 
 .raised_button:focus {
@@ -104,7 +139,7 @@ h1 {
   height: var(--slider-circle-size);
   width: var(--slider-circle-size);
   border-radius: var(--slider-circle-radius);
-  background: var(--main-color);
+  background: var(--secondary-color);
   cursor: pointer;
   margin-top: -6px;
 }
@@ -113,7 +148,7 @@ h1 {
   height: var(--slider-circle-size);
   width: var(--slider-circle-size);
   border-radius: var(--slider-circle-radius);
-  background: var(--main-color);
+  background: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -121,7 +156,7 @@ h1 {
   height: var(--slider-circle-size);
   width: var(--slider-circle-size);
   border-radius: var(--slider-circle-radius);
-  background: var(--main-color);
+  background: var(--secondary-color);
   cursor: pointer;
 }
 
@@ -141,7 +176,7 @@ h1 {
   width: 100%;
   height: var(--slider-track-height);
   cursor: pointer;
-  background: var(--main-color);
+  background: var(--secondary-color);
   border-radius: 1.3px;
 }
 
@@ -150,7 +185,7 @@ h1 {
   width: 100%;
   height: var(--slider-track-height);
   cursor: pointer;
-  background: var(--main-color);
+  background: var(--secondary-color);
   border-radius: 1.3px;
 }
 
@@ -165,11 +200,11 @@ h1 {
 }
 
 .slider::-ms-fill-lower {
-  background: var(--main-color);
+  background: var(--secondary-color);
   border-radius: 2.6px;
 }
 
 .slider::-ms-fill-upper {
-  background: var(--main-color);
+  background: var(--secondary-color);
   border-radius: 2.6px;
 }
