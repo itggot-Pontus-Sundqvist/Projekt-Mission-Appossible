@@ -1,21 +1,63 @@
-body {
+body{
   font-family: Roboto;
-  margin: 0px;
+  margin-left: 0px;
+  margin-top: -13px;
   --main-color: #FFC107;
+  height: 100%;
 }
 
+html {
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  background-color: #fafafa;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.index_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
 .layout-header {
+  position: absolute;
+  z-index: 2;
   width: 100%;
   height: 56px;
   background-color: var(--main-color);
   display: flex;
   flex-direction: row;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
 }
+
+h1 {
+  font-weight: normal;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 32px;
+}
+
 
 .menu_button {
   margin-top: 16px;
   width: 24px;
   height: 24px;
+  margin-left: 16px;
+}
+
+.drop_down_button {
+  margin-top: 16px;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
 }
 
 .raised_button{
@@ -31,7 +73,7 @@ body {
   padding-left: 16px;
   border: none;
   border-radius: 2px;
-  background-color: #2196f3;
+  background-color: var(--main-color);
 }
 
 .raised_button:focus {
@@ -39,15 +81,16 @@ body {
 }
 
 .raised_button.resting {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .raised_button.pressed {
   transform: scale(1.02,1.02);
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .slider {
+  margin-top: 60px;
   -webkit-appearance: none;
   width: 200px;
   background: transparent;
