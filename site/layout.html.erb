@@ -8,18 +8,46 @@
       </script>
     </head>
     <body>
-      <div class="navigation_drawer">
-        <div class="navigation_row">
-          <img class="navigation_icon" src="./img/settings_black.png" alt="">
-          <h2 class="navigation_titles">Settings</h2>
+      <div class="navigation_drawer" id="drawer">
+        <div class="whitespace">
         </div>
+        <a href="index.html" class="navigation_link">
+          <div class="navigation_row">
+            <img class="navigation_icon" src="./img/home_black.png" alt="">
+            <h2 class="navigation_titles">Home</h2>
+          </div>
+        </a>
+        <a href="settings.html" class="navigation_link">
+          <div class="navigation_row">
+            <img class="navigation_icon" src="./img/settings_black.png" alt="">
+            <h2 class="navigation_titles">Settings</h2>
+          </div>
+        </a>
+        <a href="settings.html" class="navigation_link">
+          <div class="navigation_row">
+            <img class="navigation_icon" src="./img/settings_black.png" alt="">
+            <h2 class="navigation_titles">Settings</h2>
+          </div>
+        </a>
+        <a href="settings.html" class="navigation_link">
+          <div class="navigation_row">
+            <img class="navigation_icon" src="./img/settings_black.png" alt="">
+            <h2 class="navigation_titles">Settings</h2>
+          </div>
+        </a>
+        <a href="settings.html" class="navigation_link">
+          <div class="navigation_row">
+            <img class="navigation_icon" src="./img/settings_black.png" alt="">
+            <h2 class="navigation_titles">Settings</h2>
+          </div>
+        </a>
       </div>
       <header class="layout-header">
-        <img class="menu_button" src="./img/menu.png" alt="menu">
+        <img class="menu_button" src="./img/menu.png" alt="menu" onclick="slide()">
         <h1>Water</h1>
         <img class="drop_down_button" src="./img/arrow_drop_down.png" alt="drop_down">
       </header>
-      <main>
+      <main onclick="hide_drawer()">
         <%= yield %>
       </main>
       <footer>

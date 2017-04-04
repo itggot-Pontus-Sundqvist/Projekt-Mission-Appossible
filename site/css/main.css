@@ -12,7 +12,9 @@ html {
 }
 
 .navigation_drawer {
+  transition: left 0.5s;
   height: 100%;
+  left: -350px;
   position: fixed;
   width: 300px;
   background-color: #fafafa;
@@ -34,10 +36,12 @@ html {
   display: flex;
   align-items: center;
   height: 48px;
-  display: flex;
   flex-direction: row;
 }
 
+.navigation_row:hover {
+  background-color: #f3f3f3;
+}
 .navigation_titles {
   margin-left: 32px;
   font-size: 16px;
@@ -80,6 +84,9 @@ h1 {
   padding-bottom: 0px;
 }
 
+a {
+  text-decoration: none;
+}
 
 .menu_button {
   margin-top: 16px;
@@ -95,7 +102,13 @@ h1 {
   margin-left: 8px;
 }
 
-.raised_button{
+.whitespace {
+  width: 100%;
+  height: 8px;
+}
+
+
+.raised_button {
   color: #FFFFFF;
   font-size: 14pt;
   text-decoration: none;
@@ -108,6 +121,7 @@ h1 {
   border: none;
   border-radius: 2px;
   background-color: var(--secondary-color);
+  transition: box-shadow 0.5s,transform 0.5s;
 }
 
 .raised_button:focus {
