@@ -6,14 +6,12 @@ function pressed(navi){
 
 function show_drawer(){
   box = document.getElementById("drawer");
-  if (box.style.left != "0px"){
-    box.style.left = "0px"
-  } else {
-    box.style.left = "-1000px"
-  }
+  box.classList.add("expanded_drawer");
+  box.classList.remove("hidden_drawer");
 }
 
 function hide_drawer(){
   box = document.getElementById("drawer");
-  box.style.left = "-1000px"
+  box.classList.add("hidden_drawer");
+  box.classList.remove("expanded_drawer");
 }
