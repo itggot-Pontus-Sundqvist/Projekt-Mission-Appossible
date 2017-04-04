@@ -227,13 +227,13 @@ main {
   position: absolute;
   z-index: 1;
   width: 100%;
-}
-
-.index_body {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.index_body {
   height: 100%;
 }
 
