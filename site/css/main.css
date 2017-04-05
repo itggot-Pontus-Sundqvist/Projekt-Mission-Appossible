@@ -17,6 +17,11 @@ body {
 
 
 @media (orientation:landscape) {
+  main {
+    margin-top: 56px;
+    height: calc(100% - 56px);
+  }
+
   .layout_header {
     height: 56px;
   }
@@ -39,8 +44,9 @@ body {
   }
 
   .large_whiteframe {
-    width: 500px;
-    height: 700px;
+    width: 400px;
+    height: 500px;
+    border-radius: 4px;
   }
 
   .expanded_drawer {
@@ -102,6 +108,11 @@ body {
 }
 
 @media (orientation:portrait) {
+  main {
+    margin-top: 112px;
+    height: calc(100% - 112px);
+  }
+
   .layout_header {
     height: 112px;
   }
@@ -126,6 +137,7 @@ body {
   .large_whiteframe {
     width: 100%;
     height: 100%;
+    border-radius: 8px;
   }
 
   .expanded_drawer {
@@ -222,7 +234,6 @@ body {
 
 
 main {
-  height: 100%;
   background-color: #fafafa;
   position: absolute;
   z-index: 1;
