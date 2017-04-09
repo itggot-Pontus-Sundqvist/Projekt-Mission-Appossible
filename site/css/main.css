@@ -74,10 +74,6 @@ h1 {
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.expanded_drawer {
-  width: 300px;
-  max-width: 70%;
-}
 
 .whitespace {
   height: 8px;
@@ -169,6 +165,12 @@ input:checked + .slide:before {
 
 .hidden_drawer {
   width: 0px;
+  max-width: 70%;
+}
+
+.expanded_drawer {
+  width: 300px;
+  max-width: 70%;
 }
 
 .navigation_titles {
