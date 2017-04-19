@@ -56,6 +56,7 @@ h1 {
   }
 
 }
+
 @media (max-width:400px) {
   .large_whiteframe {
     width: 100%;
@@ -330,14 +331,6 @@ a {
   outline: none;
 }
 
-.slider::-ms-track {
-  width: 100%;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-}
-
 .slider::-webkit-slider-runnable-track {
   width: 100%;
   height: var(--slider-track-height);
@@ -358,7 +351,6 @@ a {
   width: 100%;
   height: var(--slider-track-height);
   cursor: pointer;
-  background: transparent;
   border-color: transparent;
   border-width: 16px 0;
   color: transparent;
