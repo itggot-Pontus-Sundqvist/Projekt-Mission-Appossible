@@ -43,12 +43,27 @@
           </div>
         </a>
       </div>
+      <div class="drop_down_list hidden_list" id="list">
+        <div class="navigation_row" onclick="change_beverage(this)" id="Water">
+          <h2 class="drop_down_titles" >Water</h2>
+        </div>
+        <div class="navigation_row" onclick="change_beverage(this)" id="Cola">
+          <h2 class="drop_down_titles">Cola</h2>
+        </div>
+        <div class="navigation_row" onclick="change_beverage(this)" id="Juice">
+          <h2 class="drop_down_titles">Juice</h2>
+        </div>
+        <div class="navigation_row" onclick="change_beverage(this)" id="Pepsi">
+          <h2 class="drop_down_titles">Pepsi</h2>
+        </div>
+        <div class="whitespace"></div>
+      </div>
       <header class="layout_header">
         <img class="menu_button" src="./img/menu.png" alt="menu" onclick="show_drawer()">
-        <h1>Water</h1>
-        <img class="drop_down_button" src="./img/arrow_drop_down.png" alt="drop_down">
+        <h1 id="beverage" onclick="show_dropdown()">Water</h1>
+        <img class="drop_down_button" src="./img/arrow_drop_down.png" alt="drop_down" onclick="show_dropdown()">
       </header>
-      <main onclick="hide_drawer()">
+      <main onclick="hide_everything()">
         <div class="large_whiteframe_list">
   <div class="whiteframe_row">
     <div class="left_side">
