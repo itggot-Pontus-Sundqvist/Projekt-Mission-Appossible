@@ -8,6 +8,9 @@ function show_drawer(){
   box = document.getElementById("drawer");
   box.classList.add("expanded_drawer");
   box.classList.remove("hidden_drawer");
+  box = document.getElementById("list");
+  box.classList.add("hidden_list");
+  box.classList.remove("expanded_list");
 }
 
 function show_dropdown(){
